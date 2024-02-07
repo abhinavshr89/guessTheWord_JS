@@ -20,9 +20,10 @@ html, body {
 
 .main-heading{
    font-family: 'HeadingFont';
+   font-size: 50px;
 }
 .game-container{
-    height: 80%;
+    height: 85%;
     border: 10px solid  var(--grn);
     border-radius: 20px;
     margin-top: 70px;
@@ -72,7 +73,7 @@ html, body {
     height: 50px;
     border-radius: 20px;
     background-color: var(--org);
-    
+
 }
 .popup-message{
     text-align: center;
