@@ -1,0 +1,90 @@
+@font-face {
+    font-family: 'HeadingFont'; /* You can choose any name for your font */
+     src: url(BlackOpsOne-Regular.ttf);
+  }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+:root{
+    --grn :lightseagreen;
+    --org:#e67e22;
+}
+
+.main-heading{
+   font-family: 'HeadingFont';
+}
+.game-container{
+    height: 80%;
+    border: 10px solid  var(--grn);
+    border-radius: 20px;
+    margin-top: 70px;
+    width: 500px;
+    position: relative;
+}
+.main-row{
+    height: 100vh;
+}
+.game-heading,.message{
+    text-align: center;
+}
+.letter-box{
+    height: 50px;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.placeholder {
+    height:15px;
+    width: 25px;
+    background-color: var(--grn); /* Use the variable here */
+    border-radius: 50px;
+}
+
+.letter-input{
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 12px;
+    text-transform: uppercase;
+}
+.popup{
+    
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    display: none;
+    background-color: var(--grn);
+}
+.restart{
+    width: 100px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: var(--org);
+    
+}
+.popup-message{
+    text-align: center;
+}
+.guess-btn{
+    border-radius: 10px;
+    height: 40px;
+    width: 70px;
+    font-weight: 600;
+    background-color:var(--org);
+}
+.wrong-letters-collection{
+    text-align: center;
+    text-transform: uppercase;
+}

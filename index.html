@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row main-row py-5  ">
+            <!-- MainRow Starts -->
+
+            <div class="col-xxl-5 col-11 mx-auto game-container d-flex flex-column justify-content-between">
+             <!--   Main Game Container Starts -->
+
+                <div class="col-12  mt-3">
+                    <h1 class="game-heading"><span class="main-heading">Guess</span> the <span class="main-heading">Word</span></h1>
+                </div>
+
+                <div class="col-12 guess-message">
+                    <h5 class="message"></h5>
+                </div>
+
+                <div class="letter-box row">
+                    <div class="col-1 letter-0 ms-auto d-flex justify-content-center align-items-center">A</div>
+                    <div class="col-1 letter-1 d-flex justify-content-center align-items-center"><div class="placeholder"></div></div>
+                    <div class="col-1 letter-2 d-flex justify-content-center align-items-center"><div class="placeholder"></div></div>
+                    <div class="col-1 letter-3 d-flex justify-content-center align-items-center"><div class="placeholder"></div></div>
+                    <div class="col-1 letter-4 me-auto  d-flex justify-content-center align-items-center">A</div>
+                </div>
+                
+
+                <div class="col-12 remaining-attempts-box d-flex justify-content-center">
+                    <h5 class="remaining-message">
+                        You have 3 attempts remaining 
+                    </h5>
+                </div>
+
+                <div class="wrong-letters">
+                  <h3 class="wrong-letters-collection"></h3>
+                </div>
+                <!-- letter Input Container  -->
+
+                <div class="col-12 d-flex justify-content-center">
+                    <input type="text" maxlength="1" class="letter-input">
+                </div>
+                <div class="col-12 d-flex justify-content-center mb-3">
+                    <Button class="guess-btn">Guess</Button>
+                </div>
+                
+
+                <div class="row popup" style="position: absolute;width: 100%;">
+                        <h1 class="popup-message"></h1>
+                        <button class="restart">Restart</button>
+                </div>
+                <!-- Game Container Ends  -->
+            </div>
+
+
+
+            <!-- Main Row Ends -->
+        </div>
+    </div>
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
