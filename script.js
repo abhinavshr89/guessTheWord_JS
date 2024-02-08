@@ -1,4 +1,4 @@
-const fiveLetterWords = ['apple', 'grape', 'music', 'ocean', 'dream', 'happy', 'cloud', 'smile', 'toast', 'shine'];
+const fiveLetterWords = ['APPLE', 'GRAPE', 'MUSIC', 'OCEAN', 'DREAM', 'HAPPY', 'CLOUD', 'SMILE', 'TOAST', 'SHINE'];
 
 
 
@@ -26,6 +26,7 @@ function mainGameLogic(){
             if(pointer < wordToGuess.length-1 && submittedLetter == wordToGuess[pointer]){
                 let letterBox = document.querySelector(`.letter-${pointer}`)
                 letterBox.innerHTML = `${submittedLetter}`;
+                console.log(submittedLetter);
                 document.querySelector(".message").innerHTML =`Good guess ! The word has letter ${submittedLetter.toUpperCase()}`;
 
                 pointer++;
@@ -51,7 +52,7 @@ function mainGameLogic(){
     
     function handleGuessButton() {
         var letterInputBox = document.querySelector(".letter-input");
-        var submittedLetter = letterInputBox.value;
+        var submittedLetter = letterInputBox.value.toUpperCase();
         console.log(submittedLetter);
         letterInputBox.value = ""; // Clearing the input box after every submission
         if (checkSubmission(submittedLetter)) {
