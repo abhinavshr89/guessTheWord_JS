@@ -97,7 +97,9 @@ html, body {
     text-align: center;
     text-transform: uppercase;
 }
-
+.remaining-message{
+    text-align: center;
+}
 @media (max-width:650px) {
     .game-container{
         height: auto;
@@ -108,7 +110,7 @@ html, body {
         position: relative;
     }
     .game-container{
-        height: 90vh;
+        height: 70vh;
         width: 90vw;
     }
 }
