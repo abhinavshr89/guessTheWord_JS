@@ -1,6 +1,5 @@
-const fiveLetterWords = [
-    'apple'
-  ];
+const fiveLetterWords = ['apple', 'grape', 'music', 'ocean', 'dream', 'happy', 'cloud', 'smile', 'toast', 'shine'];
+
 
 
 
