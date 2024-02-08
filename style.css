@@ -59,7 +59,7 @@ html, body {
     height: 50px;
     font-size: 20px;
     font-weight: 700;
-    padding: 12px;
+    text-align: center;
     text-transform: uppercase;
     border: 2px solid var(--org);
     border-radius: 10px;
