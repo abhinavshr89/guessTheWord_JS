@@ -23,7 +23,10 @@ function mainGameLogic(){
     // Now we need to make the function to check the submitted Letter 
     var pointer = 1 ;
     function checkSubmission(submittedLetter){
-            if(pointer < wordToGuess.length-1 && submittedLetter == wordToGuess[pointer]){
+            if( submittedLetter == ''){
+                alert("Please enter a letter!");
+            }
+            else if(pointer < wordToGuess.length-1 && submittedLetter == wordToGuess[pointer]){
                 let letterBox = document.querySelector(`.letter-${pointer}`)
                 letterBox.innerHTML = `${submittedLetter}`;
                 console.log(submittedLetter);
